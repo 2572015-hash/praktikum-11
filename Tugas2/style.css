@@ -1,0 +1,105 @@
+body {
+    padding: 30px;
+}
+
+.container {
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px lightgrey;
+    margin: auto;
+}
+
+.input-group {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 6px 12px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+#btnTambah {
+    background: #28a745;
+    padding: 8px 12px;
+}
+
+.danger {
+    color: red;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 20px;
+    background: #fff3cd;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9ecef;
+}
+
+button {
+    margin-right: 5px;
+}
+
+.btn-done {
+    background-color: #007bff;
+}
+
+.btn-edit, .btn-submit {
+    background-color: #ffff00;
+    color: black;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+h3 {
+    margin-top: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.tercoret {
+    text-decoration: line-through;
+    color: #888;
+}

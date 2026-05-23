@@ -1,0 +1,256 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+body { 
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+}
+
+#loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}       
+.login-card {
+    background: white; 
+    padding: 32px 36px; 
+    width: 320px; border: 1px solid #ddd; 
+}
+.login-card h2 {
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+.login-card p { 
+    font-size: 13px; color: #777; 
+    margin-bottom: 20px; 
+}
+.login-card label { 
+    font-size: 13px; 
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 4px; 
+}
+.login-card input { 
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    margin-bottom: 14px; 
+    font-size: 14px; 
+}
+.login-card button { 
+    width: 100%; 
+    padding: 9px; 
+    background: #4a90d9; 
+    color: white; 
+    border: none; 
+    font-size: 14px; 
+    cursor: pointer; 
+}
+.login-card button:hover { 
+    background: #357abd; 
+}
+#loginError { 
+    color: red; 
+    font-size: 12px; 
+    margin-top: 8px; 
+    display: none; 
+}
+
+#appPage { 
+    display: none; 
+}
+.topbar { 
+    background: #4a90d9; 
+    color: white; 
+    padding: 12px 24px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.topbar h1 { 
+    font-size: 18px; 
+}
+.topbar-right { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+}
+.topbar-right span { 
+    font-size: 14px; 
+}
+#btnLogout { 
+    background: #e53935; 
+    color: white; 
+    border: none; 
+    padding: 6px 14px; 
+    cursor: pointer; 
+    font-size: 13px; 
+}
+.container { 
+    max-width: 680px; 
+    margin: 28px auto; 
+    padding: 0 16px; 
+}
+.form-card { 
+    background: white; 
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+.form-card h3 { 
+    font-size: 15px; 
+    margin-bottom: 12px; 
+}
+.form-card input, .form-card textarea { 
+    width: 100%; 
+    border: 1px solid #ccc; 
+    padding: 8px; 
+    font-size: 14px; 
+    margin-bottom: 10px; 
+    font-family: Arial; 
+}
+.form-card textarea { 
+    height: 80px; 
+    resize: vertical; 
+}
+.form-row { 
+    display: flex; 
+    gap: 8px; 
+}
+.form-row select { 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    font-size: 13px; 
+    background: white; 
+}
+.form-card .btn-simpan { 
+    padding: 8px 20px; 
+    background: #4a90d9; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 13px; 
+}
+.form-card .btn-simpan:hover { 
+    background: #357abd; 
+}
+
+.meta-row { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 12px; 
+    flex-wrap: wrap; 
+    gap: 8px; 
+}
+.filter-btns button { 
+    padding: 5px 12px; 
+    border: 1px solid #ccc; 
+    background: white; 
+    font-size: 12px; 
+    cursor: pointer; 
+    margin-right: 4px; 
+}
+.filter-btns button.active { 
+    background: #4a90d9; 
+    color: white; 
+    border-color: #4a90d9; 
+}
+.stats-text { 
+    font-size: 12px; 
+    color: #888; 
+}
+.note-card { 
+    background: white; 
+    border: 1px solid #ddd; 
+    padding: 14px 16px; 
+    margin-bottom: 10px; 
+}
+.note-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+.note-title { 
+    font-size: 15px; 
+    font-weight: bold; 
+}
+.note-actions { 
+    display: flex; 
+    gap: 6px; 
+}
+.note-actions button { 
+    border: none; 
+    background: transparent; 
+    font-size: 12px; 
+    cursor: pointer; 
+    color: #888; 
+    padding: 2px 6px; 
+}
+.note-actions .btn-hapus:hover { 
+    color: red; 
+}
+.note-actions .btn-pin { 
+    font-size: 14px; 
+}
+.note-body { 
+    font-size: 13px; 
+    color: #444; 
+    margin: 8px 0; 
+    line-height: 1.6; 
+}
+.note-footer { 
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+    margin-top: 6px; 
+}
+.badge { 
+    font-size: 11px; 
+    padding: 2px 8px; 
+    border-radius: 3px; 
+}
+.badge-kerja { 
+    background: #d0e9ff; 
+    color: #1565c0; 
+}
+.badge-pribadi { 
+    background: #fce4ec; 
+    color: #c62828; 
+}
+.badge-ide { 
+    background: #e8f5e9; 
+    color: #2e7d32; 
+}
+.badge-penting { 
+    background: #fff8e1; 
+    color: #f57f17; 
+}
+.note-date { 
+    font-size: 11px; 
+    color: #aaa; 
+}
+.pinned-label { 
+    font-size: 11px; 
+    color: #f57f17;
+}
+.empty-msg { 
+    text-align: center; 
+    color: #aaa; 
+    font-size: 14px; 
+    padding: 32px 0; 
+}
+#toastMsg { 
+    position: fixed; 
+    bottom: 24px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: #333; 
+    color: white; 
+    padding: 8px 20px; 
+    font-size: 13px; 
+    display: none; 
+}

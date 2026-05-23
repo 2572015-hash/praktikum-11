@@ -1,0 +1,71 @@
+<!-- 2572015 - Steven Theodore Alden -->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Catatan - 2572015</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div id="loginPage">
+    <div class="login-card">
+      <h2>Catatan Harian</h2>
+      <p>Masuk untuk mulai mencatat</p>
+      <label>Nama Pengguna</label>
+      <input type="text" id="inputNama" placeholder="Contoh: Budi">
+      <label>PIN (4 digit)</label>
+      <input type="password" id="inputPin" placeholder="Masukkan PIN" maxlength="4">
+      <button id="btnMasuk">Masuk</button>
+      <p id="loginError">Nama atau PIN salah.</p>
+      <p style="font-size:11px; color:#aaa; margin-top:12px;">Demo: nama <strong>budi</strong>, PIN <strong>1234</strong></p>
+    </div>
+  </div>
+
+  <div id="appPage">
+    <div class="topbar">
+      <h1>Catatan Harian</h1>
+      <div class="topbar-right">
+        <span id="namaUser"></span>
+        <button id="btnLogout">Logout</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="form-card">
+        <h3>Tambah Catatan</h3>
+        <input type="text" id="inputJudul" placeholder="Judul catatan...">
+        <textarea id="inputIsi" placeholder="Isi catatan..."></textarea>
+        <div class="form-row">
+          <select id="selectKategori">
+            <option value="pribadi">Pribadi</option>
+            <option value="kerja">Kerja</option>
+            <option value="ide">Ide</option>
+            <option value="penting">Penting</option>
+          </select>
+          <button class="btn-simpan" id="btnSimpan">Simpan Catatan</button>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div class="filter-btns">
+          <button class="filter-btn active" data-filter="semua">Semua</button>
+          <button class="filter-btn" data-filter="pribadi">Pribadi</button>
+          <button class="filter-btn" data-filter="kerja">Kerja</button>
+          <button class="filter-btn" data-filter="ide">Ide</button>
+          <button class="filter-btn" data-filter="penting">Penting</button>
+        </div>
+        <span class="stats-text" id="statsText"></span>
+      </div>
+      <div id="noteList"></div>
+    </div>
+  </div>
+  <div id="toastMsg"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
